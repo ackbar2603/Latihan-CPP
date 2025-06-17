@@ -1,16 +1,17 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
+void Hello(string name, int age){
+
+    cout << "Hello there " << name << endl;
+    cout << "So, you are " << age << endl;
+
+}
+
 int main(){
-    float a, b, c;
-    cin >> a >> b >> c;
-
-    if (a >= b && a >= c)
-        cout << "Angka paling besar adalah: " << a;
-    if (b >= a && b >= c)
-        cout << "Angka paling besar adalah: " << b;
-    if (c >= a && c >= b)
-        cout << "Angka paling besar adalah: " << b;
+    Hello("Ikmal", 21);
+    Hello("Sekar", 20);
+    
     return 0;
-
 }
